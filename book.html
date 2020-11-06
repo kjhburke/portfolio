@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>K2 Fitness</title>
+</head>
+<body>
+    <header>
+        <p class="logo">K2</p>
+        <nav>
+            <ol class="nav-links">
+                <li><a href="home.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="workouts.html" class="nav-item">Why HIIT?</a></li>
+                <li><a href="tips.html" class="nav-item">Tips</a></li>
+                <li><a href="book.html" class="nav-item active-page">Book</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+             <h1>Interested in starting your fitness journey?</h1>
+            <p>Please reach out to Kelsey below.</p>
+            <div class="form">
+                <form action="https://formspree.io/f/mvovrbbq" method="POST">
+                    <label for="name">Name</label><br>
+                    <input type="text" placeholder="Jane Doe" name="name" required><br>
+            
+                    <label for="email">Email</label><br>
+                    <input type="text" placeholder="janedoe@example.com" name="email" required><br>
+
+                    <label for="interest">What are you interested in?</label><br>
+                    <select id="interest" name=interest>
+                        <option value="" disabled selected hidden>Select one</option>
+                        <option value="consultation">Consultation</option>
+                        <option value="private sessionn">Private Session</option>
+                        <option value="custom program">Custom Program</option>
+                    </select>        
+
+                    <label for="fname">Message</label><br>
+                    <textarea type="text" placeholder="Enter your message" name="message" required></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; K2 Fitness</p>
+    </footer>
+</body>
+</html>
