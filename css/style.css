@@ -350,7 +350,7 @@ input[type=submit]{
 }
 
 
-@media screen and (min-width: 776px){
+@media screen and (min-width: 768px){
     header  {
         display: flex;
         flex-direction: row;
@@ -362,7 +362,7 @@ input[type=submit]{
         text-align: left;
     }
 
-    .content{
+    .container{
         padding: 10% 0%;
     }
     
