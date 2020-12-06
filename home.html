@@ -18,11 +18,11 @@
     <title>K2 Fitness</title>
 </head>
 <body>
+    <a class="jump" href="#main">JUMP TO MAIN CONTENT</a>
     <header>
-        <p class="logo">K2</p>
+        <a href="home.html" class="logo">K2</a>
         <nav>
             <ol class="nav-links">
-                <li><a href="home.html" class="nav-item  active-page">Home</a></li>
                 <li><a href="about.html" class="nav-item">About</a></li>
                 <li><a href="workouts.html" class="nav-item">Why HIIT?</a></li>
                 <li><a href="tips.html" class="nav-item">Tips</a></li>
@@ -30,31 +30,60 @@
             </ol>
         </nav>
     </header>
-    <main>
-        <div class="dominant">
-            <img src="images/cover-img.png" alt="gym">
-            <div class="overlap-container">
-                <div class="title-copy">
-                    <h1 id="title">K2 FITNESS</h1>
-                    <a href="#pt" id="subtitle">Learn More</a>
-                </div>
+    <main id="main">
+        <div class="parallaxIMG"></div>
+        
+        <div class="title-container">
+            <div class="title-copy">
+                <h1 id="title">K2 FITNESS</h1>
+                <a href="#offerings" id="subtitle">Learn More</a>
             </div>
         </div>
 
-        <div id="pt" class="container-s">
-            <h2>Personal Training</h2>
-            <p>One on one training sessions to help you reach your fitness goals.</p>
-        </div>
-        <div class="grey">
-            <div class="container-s right-align">
-                <h2>Custom Fitness Programs</h2>
-                <p>We offer a variety of HIIT based workouts designed especially for you.</p>
+        <div id="offerings" class="container">
+            <h2 style="text-align: center;">Our Offerings</h2>
+            <div class="grid">
+
+                <div id="card-1" class="flip-card">
+                    <div class="flip-card-inner">
+                        <a href="card-1">
+                            <div class="flip-card-front">
+                                <h3 class="flip-card-title">Personal Training</h3>
+                            </div>
+                        </a>
+                        <div class="flip-card-back">
+                            <p style="font-size: 24px;">One on one training sessions to help you reach your fitness goals.</p>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="card-2" class="flip-card">
+                    <div class="flip-card-inner">
+                        <a href="card-2">
+                            <div class="flip-card-front">
+                                <h3 class="flip-card-title">Custom Fitness Programs</h3>
+                            </div>
+                        </a>
+                        <div class="flip-card-back">
+                            <p style="font-size: 24px;">We offer a variety of HIIT based workouts designed especially for you.</p>
+                        </div>
+                    </div>
+                </div> 
+
+                <div id="card-3" class="flip-card">
+                    <div class="flip-card-inner">
+                        <a href="card-3">
+                            <div class="flip-card-front">
+                                <h3 class="flip-card-title">Maximum Results</h3>
+                            </div>
+                        </a>
+                        <div class="flip-card-back">
+                            <p style="font-size: 24px;">Each workout focuses on a different muscle group, guaranteeing maximum results.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="container-s">
-            <h2>Maximum Results</h2>
-            <p>Each workout focuses on a different muscle group, guaranteeing maximum results.</p>
-        </div>
+        </div>    
     </main>
     <footer>
         <p>&copy; K2 Fitness</p>
