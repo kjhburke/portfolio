@@ -1,3 +1,4 @@
+/* Overall Styling */
 body{
     color: #000000;
     font-family: "Avenir Next", sans-serrif;
@@ -33,59 +34,69 @@ p{
     margin: 15px 0px;
 }
 
+a {
+    text-decoration: none;
+}
+
 img{
     margin: 25px 0px;
 }
 
-.dominant{
-    position: relative;
-}
-
-.dominant img{
-    width: 100%;
-    margin: 0px;
-}
-
-.overlap-container{
-    position: absolute;
-    color: #ffffff;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-    margin: 0 auto;
-}
-
-.container, .title-copy{
+.container {
     max-width: 70%;
     margin-left: auto;
     margin-right: auto;
     padding: 20% 0%;
 }
 
-.container-s{
-    max-width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10% 0%;
-}
-
-.title-copy a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.right-align{
-    text-align: right;
-}
-
-.grey{
+.grey-bar{
     background-color: rgba(0, 0, 0, 0.05);
 }
 
 footer{
     padding: 25px;
     text-align: center;
+}
+
+/* Home Page */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 25px;
+    justify-items: center;
+}
+
+.parallaxIMG {
+    background-image: url("../images/cover-img.png");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: ;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    width: 100%;
+    color: #ffffff;
+}
+
+.title-copy{
+    margin-top: 20%;
+    padding: 20px;
+    background-color: #000000;
+    text-align: center;
+    align-items: center;
+}
+
+.title-copy a{
+    text-decoration: none;
+    color: #ffffff;
 }
 
 /* Animation */
@@ -157,10 +168,148 @@ header {
 
 .logo {
     color: #ffffff;
-    font-size: 24px;
+    font-size: 30px;
     text-decoration: none;
     font-weight: bold;
     margin: 0px;
+}
+
+/* Jump to content */
+.jump{
+    background: #8CDEFF;    
+    left: 20px;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    color: #000000;
+  }
+  
+.jump:focus{
+    top:20px;
+    color: black;
+  }
+
+/* Flip Cards */
+.flip-card{
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    margin: 25px 0;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.7s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner, .flip-card:active .flip-card-inner, .flip-card:focus .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card:focus-within .flip-card-inner{
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.flip-card-front {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.flip-card-back{
+    background-color: #8CDEFF;
+    color: #000000;
+    transform: rotateY(180deg);
+}
+
+.flip-card-title {
+    font-size: 24px;
+}
+
+/* Workout Page */
+.equipment-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 0px;
+    grid-gap: 25px;
+}
+
+.equipment-icon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 45%;
+}
+
+.equipment-label{
+    text-align: center;
+}
+
+/* Tips Page */
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-container div{
+    width: 300px;
+    margin: 20px 20px 20px 0px;
+}
+
+.flex-container h2{
+    font-weight: bold;
+}
+
+.flex-container p{
+    margin: 5px 0px;
+}
+
+.exercise-grid{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 50px 0px;
+    grid-gap: 25px;
+}
+
+.exercise-block{
+    margin: 20px 0px;
+    max-width: 325px;
+    max-height: 325px;
+    overflow: hidden;
+}
+
+.exercise-block h3{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.exercise-grid > .exercise-block:hover{
+    overflow: scroll;
+    max-width: 325px;
+    max-height: 525px;
+    border-color: #8CDEFF;
+    border-width: 3px;
+    border-style: solid;
+    padding: 5px;
 }
 
 /* Contact Form */
@@ -192,7 +341,7 @@ textarea{
 
 input[type=submit]{
     background-color: #8CDEFF;
-    color: white;
+    color: #000000;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -201,78 +350,7 @@ input[type=submit]{
 }
 
 
-/* Workouts */
-.equipment-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin: 20px 0px;
-    grid-gap: 25px;
-}
-
-.equipment-icon {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 45%;
-}
-
-.equipment-label{
-    text-align: center;
-}
-
-/* Tips */
-
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.flex-container div{
-    width: 300px;
-    margin: 20px 20px 20px 0px;
-}
-
-.flex-container h2{
-    font-weight: bold;
-}
-
-.flex-container p{
-    margin: 5px 0px;
-}
-
-
-.exercise-grid{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin: 50px 0px;
-    grid-gap: 25px;
-}
-
-.exercise-block{
-    margin: 20px 0px;
-    max-width: 325px;
-    max-height: 325px;
-    overflow: hidden;
-}
-
-.exercise-block h3{
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.exercise-grid > .exercise-block:hover{
-    overflow: scroll;
-    max-width: 325px;
-    max-height: 525px;
-    border-color: #8CDEFF;
-    border-width: 3px;
-    border-style: solid;
-    padding: 5px;
-}
-
-
-@media screen and (min-width: 768px){
+@media screen and (min-width: 776px){
     header  {
         display: flex;
         flex-direction: row;
@@ -291,6 +369,15 @@ input[type=submit]{
     h1{
         font-size: 64px;
     }
+
+    .parallaxIMG {
+        height: 600px;
+    }
+
+    .title-container{
+        top: 15%;
+    }
+
     .equipment-grid{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -298,10 +385,13 @@ input[type=submit]{
     .exercise-grid{
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-
-@media screen and (min-width: 992px){
+@media screen and (min-width: 1200px){
     /* Nav Bar */
     header  {
         display: flex;
@@ -318,11 +408,23 @@ input[type=submit]{
         padding: 5% 0%;
     }
 
+    .parallaxIMG {
+        height: 800px;
+    }
+
+    .title-container{
+        top: 5%;
+    }
+
     .equipment-grid{
         grid-template-columns: repeat(5, 1fr);
     }
 
     .exercise-grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid{
         grid-template-columns: repeat(3, 1fr);
     }
 }
