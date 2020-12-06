@@ -195,8 +195,8 @@ header {
 /* Flip Cards */
 .flip-card{
     background-color: transparent;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin: 25px 0;
 }
 
@@ -271,8 +271,9 @@ header {
 }
 
 .flex-container div{
-    width: 300px;
-    margin: 20px 20px 20px 0px;
+    width: 250px;
+    margin: 15px 15px 15px 0px;
+    padding: 0px 10px;
 }
 
 .flex-container h2{
@@ -299,7 +300,6 @@ header {
 
 .exercise-block h3{
     text-align: center;
-    margin-bottom: 10px;
 }
 
 .exercise-grid > .exercise-block:hover{
@@ -391,7 +391,7 @@ input[type=submit]{
     }
 }
 
-@media screen and (min-width: 1200px){
+@media screen and (min-width: 1024px){
     /* Nav Bar */
     header  {
         display: flex;
@@ -414,6 +414,11 @@ input[type=submit]{
 
     .title-container{
         top: 5%;
+    }
+
+    .flip-card{
+        width: 300px;
+        heigh: 300px;
     }
 
     .equipment-grid{
