@@ -247,7 +247,7 @@ header {
 /* Workout Page */
 .equipment-grid {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     margin: 20px 0px;
     grid-gap: 25px;
 }
