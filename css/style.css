@@ -418,7 +418,7 @@ input[type=submit]{
 
     .flip-card{
         width: 300px;
-        heigh: 300px;
+        height: 300px;
     }
 
     .equipment-grid{
@@ -442,5 +442,9 @@ input[type=submit]{
     #subtitle{
         animation: none;
         visibility: visible;
+    }
+
+    .flip-card-inner{
+        transition: none;
     }
 }
