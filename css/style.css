@@ -8,21 +8,22 @@ h1{
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 25px;
+    line-height: 1.2em;
 }
 
 h2 {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: bold;
     margin-bottom: 25px;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
 }
 
 h4{
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     line-height: 1.6em;
     margin: 15px 0px;
@@ -35,6 +36,7 @@ p{
 }
 
 a {
+    font-size: 18px;
     text-decoration: none;
 }
 
@@ -240,10 +242,6 @@ header {
     transform: rotateY(180deg);
 }
 
-.flip-card-title {
-    font-size: 24px;
-}
-
 /* Workout Page */
 .equipment-grid {
     display: grid;
@@ -264,26 +262,6 @@ header {
 }
 
 /* Tips Page */
-.flex-container{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.flex-container div{
-    width: 250px;
-    margin: 15px 15px 15px 0px;
-    padding: 0px 10px;
-}
-
-.flex-container h2{
-    font-weight: bold;
-}
-
-.flex-container p{
-    margin: 5px 0px;
-}
-
 .exercise-grid{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -367,7 +345,27 @@ input[type=submit]{
     }
     
     h1{
-        font-size: 64px;
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 38px;
+    }
+    
+    h3 {
+        font-size: 26px;
+    }
+    
+    h4{
+        font-size: 22px;
+    }
+    
+    p{
+        font-size: 18px;
+    }
+
+    .title-copy a{
+        font-size: 24px;
     }
 
     .parallaxIMG {
@@ -402,6 +400,30 @@ input[type=submit]{
     .nav-links {
         flex-direction: row;
         text-align: left;
+    }
+
+    h1{
+        font-size: 65px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    h4{
+        font-size: 24px;
+    }
+    
+    p{
+        font-size: 20px;
+    }
+
+    .title-copy a{
+        font-size: 30px;
     }
 
     .container{
